@@ -1,0 +1,180 @@
+<HTML>
+<!-- ks.html -->
+
+<HEAD>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <TITLE>
+        Rigorous study of dynamics of dissipative PDE's
+    </TITLE>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</HEAD>
+
+<BODY>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Piotr Zgliczynski</a>-->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./papers.html">Papers</a></li>
+                    <li class="active"><a href="#">Research</a></li>
+                    <li><a href="http://capd.ii.uj.edu.pl/">CAPD</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-12 col-sm-8">
+                    <h1> Piotr Zgliczynski </h1>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <img src="./assets/picture.jpg" />
+                </div>
+            </div>
+
+           <div class="row row-header">
+                <div class="col-xs-12">
+                <span id='badgeCont200789' style='width:126px'>
+				<script src='http://labs.researcherid.com/mashlets?el=badgeCont200789&mashlet=badge&showTitle=false&className=a&rid=O-2866-2013'>
+				</script>
+			</span>
+            </div>
+			<div class="col-xs-12">
+				<A HREF="http://scholar.google.com/citations?user=oHfEkuoAAAAJ" TARGET="_blank">My Google Scholar</A>
+			</div>
+            </div>
+            </div>
+    </header>
+    <div class="container">
+        <H1> Rigorous study of dynamics of dissipative PDE's </H1> The goal of this project is to develope the tools for rigorous study of the dynamics of dissipative PDE's (Kuramoto-Sivashinsky
+        (KS), Navier-Stokes (NS), Ginzburg-Landau (GL)), etc. The method combines topological methods and rigorous numerics.
+
+        <H3> General description of the project with applications to KS equations </H3>
+
+        <P>
+            A conference presentation in form of slides
+            <A HREF="kssl.ps"> ps </A>
+
+
+            <P> A paper with K. Mischaikow with the description of the method:
+                <A HREF="kuramoto.ps">ps </A>. This paper contains a proof of the existence of multiple steady states for KS-eq. The issue of local uniqueness
+                of these fixed points and a general question how to produce a rigorous steady state bifurcation diagram is
+                treated in paper
+                <A HREF="bifks.pdf"> Towards rigorous bifurcation diagram .. </A>. It contains essentially all theory and formulas necessary for this purpose and the proof of the existence
+                of several bifurcations - the numerical data from these proofs are given
+                <A HREF="bifdata.txt"> here </A>
+
+                <P>In paper
+                    <A HREF="kstable.ps"> Attracting fixed points for Kuramoto-Sivashinsky
+   equation </A> using the estimates for Lipschitz constants based on logarithmic norms introduced in the paper 'Trapping
+                    regions ...' (see below in NS-section) we show that some of the fixed points whose existence was established
+                    in paper with K. Mischaikow are attracting. The text file
+                    <A HREF="repattr.txt"> appendix </A> contains numerical data from proofs.
+
+
+                    <P> Recently, I have proved the existence of periodic orbits, both stable and unstable ones, for KS-equations
+                        for parameter values of mu in the range [0.02991,0.128]. The proof combines self-consistent bounds
+                        with
+                        <A HREF="#rignum"> rigorous numerics </A> for PDEs.
+                        <A HREF="kscalk.pdf"> pdf</A> the numerical data from these proofs are given
+                        <A HREF="proofs.zip"> here </A> , see also earlier paper on this topic
+                        <A HREF="ksper.pdf"> ps </A>
+
+
+                        <H3> Navier-Stokes Equations </H3> The paper
+                        <A HREF="../ns/ns.ps"> Trapping regions  and ODE-type proof of
+the existence and uniqueness for Navier-Stokes equations with periodic boundary
+conditions on the plane  </A> gives a self-contained account of the ODE-type proof by
+                        <A HREF="http://doob.Stanford.EDU/~jonm/Papers/elementaryExistanceNSFinal.ps">
+Mattingly and Sinai </A> (see also a paper by
+                        <A HREF="http://www.math.princeton.edu/~weinan/papers/SPDE1.ps">
+E and Sinai </A>) of the existence and uniqueness of the Navier-Stokes systems with periodic boundary conditions
+                        on the plane. Mattingly and Sinai called their proof elementary, but the their proof was ODE-type
+                        (elementary in their sense) only up to the moment of getting the trapping regions for all Galerkin
+                        projections, but to pass to the limit with the dimension of Galerkin projections they invoked classical
+                        results from PDE theory (which for sure are not elementary in any sense), which are usually not mastered
+                        by the researchers working in dynamics of ODE's, to which this note is mainly addressed. In this
+                        note we fill-in this gap by giving ODE-type arguments, which allow to pass to the limit. Using ODE-type
+                        estimates based on the logarithmic norms we also obtained uniqueness and an estimate for the Lipschitz
+                        constant. In fact we have proved (using ODE-tools only) that on the trapping region we have a semidynamical
+                        system. The results we prove here are well known for Navier-Stokes system in 2D, but the method of
+                        getting very nice estimates on Galerkin projections presented here appears to be new.
+
+
+
+                        <H3> Convergence of Galerkin projections  </H3> The paper
+                        <A HREF="../ns/ns.dvi"> Trapping regions  and ODE-type proof of
+the existence and uniqueness for Navier-Stokes equations with periodic boundary
+conditions on the plane  </A> gives nice argument for convergence of Galerkin projections for NS-2D, KS-1D or NS-3D (with small
+                        initial data and force). A paper
+                        <A HREF="../ns/c1galer.ps"> On smooth dependence on initial conditions for dissipative
+PDEs  </A> goes beyond this and gives a proof that also the derivatives with respect to initial conditions
+                        for Galerkin projections converge. This gives rise to smooth dependence on initial conditions for
+                        full PDEs on the trapping regions. The proof does not give rate of convergence, so we cannot use
+                        it in the rigorous numerics for PDEs get some hyperbolicity, but I hope that soon I will do this
+                        too.
+
+
+
+
+                        <H3> Rigorous numerics </H3>
+                        <A NAME="rignum"> </A>
+                        <P> The description of C^1 and C^0 Lohner algorithm explaining how we do rigorous computations for ODE's
+                            is here:
+                            <A HREF="c1lohner.pdf"> pdf </A>. This paper contains also proofs of the existence of attracting periodic orbit for Rossler equations
+                            for a=2.2 and other close values, and for 14-dim Galerkin projection of the Kuramoto-Sivashinsky
+                            equations.
+
+                            <P> The description of an algorithm, which I use to compute the Poincare maps for PDE's can be found
+                                <A HREF="kscalk.pdf"> here </A>) (see also
+                                <A HREF="lohper.ps"> ps </A>). This is a modification of Lohner algorithm to ODE's with perturbation. An ODE is the Galerkin
+                                projection of PDE and the perturbation is given by self-consistent a-priori bounds, but a
+                                the tail evolves this perturbation changes in time.
+
+                                <H3> Infinite dimensional discrete systems </H3>
+                                <P> The paper with Z. Galias
+                                    <A HREF="../inf-dim/infdd.pdf">A rigorous numerical ...</A> contains a generalization of Krawczyk method to the context of infinite dimensional
+                                    disipative system. In this paper it is applied to an intergral map - Kot-Schaffer dispersal-growth
+                                    model. We treat this a preparation of C^1-tools for rigorous investigation of dissipative
+                                    PDEs.
+
+
+                                    <P>
+                                        Last modified December 9, 2004
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row row-footer">
+                <div class="col-xs-12">
+                    e-mail address:
+                    <a href="mailto:umzglicz@cyf-kr.edu.pl">umzglicz@cyf-kr.edu.pl</a>
+                </div>
+                <div class="col-xs-12">
+                    <a href="http://ww2.ii.uj.edu.pl/~zgliczyn/curr.pdf">Curriculum Vitae </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</BODY>
+
+
+</html>

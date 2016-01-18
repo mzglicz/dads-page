@@ -1,0 +1,42 @@
+.row-footer {
+    background-color: #AfAfAf;
+    margin:10px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.row-content {
+    margin: 10px auto;
+}
+
+.row-header {
+    margin-top: 20px;
+}
+
+.jumbotron {
+    background: #0039e6;
+    color:floralwhite;
+}
+
+.navbar-inverse {
+     background:  #0033cc;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background: #0033cc;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+ .navbar-inverse .navbar-nav > .open > a:hover,
+ .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #fff;
+    background: #002699;
+}
+
+.jumbotron a,
+.jumbotron a:hover,
+.jumbotron a:focus {
+    color: #fff;
+}
